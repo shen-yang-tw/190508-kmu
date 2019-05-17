@@ -187,7 +187,6 @@ ol.listDecimalRow.badge>li:before {background: #4ca7c2;}
 /* body.index {background-image: url(../img/bg.png); background-repeat: repeat-y; background-position: right center;} */
 #header .uk-container {max-width: inherit;}
 
-.uk-list .uk-offcanvas.uk-active>div {width: calc(100% / 3);background-color: rgba(97, 195, 182, 0.9) !important;}
 .uk-list .uk-offcanvas.uk-active>div>div:first-child {display: none;}
 
 .logo {display: flex;}
@@ -223,6 +222,7 @@ footer, footer a {color: white !important;}
 .logo img {
     max-height: 34px;
 }
+.uk-list .uk-offcanvas.uk-active>div {width: calc(100% / 2);}
 }
 
 @media (min-width:768px) {
@@ -260,6 +260,7 @@ footer, footer a {color: white !important;}
 }
 
 @media (min-width:1220px) {
+.uk-list .uk-offcanvas.uk-active>div {width: calc(100% / 3);}
 .logo img {
     width: auto;
     max-height: 50px;
