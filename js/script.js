@@ -45,26 +45,27 @@ $(document).ready(function() {
   //for Plus Search page
   $(".search_option>div:last").after($(".search_option>div:first").clone().removeClass('uk-row-first'));
   $(".search_option [data-uk-alert]:last .option").remove();
+  $(".search_option>div:first .uk-grid>div:last").addClass('uk-hidden');
+  $(".search_option [data-uk-alert]:last .uk-grid>div:last").remove();
   $("#addBtn, #addBtn_mobile").click(function() {
     //button #add cannot place in <form> or not working
-    var counter = $(this).parent().parent().children().length;
+    var counter = $(this).closest(".search_option").children().length;
     $(this).parent().siblings().not(":first").find("button").addClass('uk-alert-close');
-    var newSearch = $(this).parent().parent().children(":first").clone().removeClass('uk-row-first');
+    var newSearch = $(this).closest(".search_option").children(":first").clone().removeClass('uk-row-first');
     newSearch.children().children().children(":first").children("input").val("");
     newSearch.find("button").addClass('uk-alert-close');
-    
+    newSearch.find(".uk-grid>div:last").removeClass('uk-hidden');
     if (counter < 6) {
-      // if (counter < 3) {}
-      //   $(this).parent().parent().children(":first button").removeClass('uk-alert-close');
-      // }
-      $(this).parent().parent().children(":nth-child(2)").after(newSearch);
-      $(this).parent().parent().children("[data-uk-alert]:last .option").remove();
+      $(this).closest(".search_option").children(":nth-child(2)").after(newSearch);
+      $(this).closest(".search_option").children("[data-uk-alert]:last").find(".option").remove();
     }
+    $(this).closest(".search_option").children("[data-uk-alert]:last").find("button").removeClass('uk-alert-close');
   });
+
 
   //remove self after show .listMore
   $(".btnMore").click(function() {
-    $(this).parent().siblings(".listMore").removeClass("hidden");
+    $(this).parent().siblings(".listMore").removeClass("hidden uk-hidden");
     $(this).parent().remove();
   });
 

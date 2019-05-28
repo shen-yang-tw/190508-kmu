@@ -197,7 +197,7 @@ footer, footer a {color: white !important;}
 /* Uikit Style
 ---------------------------------------------------- */
 .uk-pagination a {margin-bottom: 5px;}
-.uk-pagination>.uk-active>span, .uk-pagination>li>a:focus, .uk-pagination>li>a:hover, .uk-nav-dropdown>li>a:focus, .uk-nav-dropdown>li>a:hover, .uk-subnav-pill a:hover, .uk-subnav-pill>.uk-active>*, .uk-tab.tab_primary li.uk-active>a, .uk-tab>li.uk-open>a, .uk-tab>li>a:focus, .uk-tab>li>a:hover {
+.uk-pagination>.uk-active>span, .uk-pagination>li>a:focus, .uk-pagination>li>a:hover, .uk-nav-dropdown>li.uk-active>a, .uk-nav-dropdown>li>a:focus, .uk-nav-dropdown>li>a:hover, .uk-subnav-pill a:hover, .uk-subnav-pill>.uk-active>*, .uk-tab.tab_primary li.uk-active>a, .uk-tab>li.uk-open>a, .uk-tab>li>a:focus, .uk-tab>li>a:hover {
     background-color: #4ca7c2;
     color: #fff !important;
 }
