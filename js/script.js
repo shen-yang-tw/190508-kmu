@@ -67,6 +67,7 @@ $(document).ready(function() {
   $(".btnMore").click(function() {
     $(this).parent().siblings(".listMore").removeClass("hidden uk-hidden");
     $(this).parent().remove();
+    return false;
   });
 
   //dynamically toggle check on list & show check numbers
