@@ -2,7 +2,7 @@
 .link a:link, .link a:visited, .link a:focus, .uk-breadcrumb a:link, .uk-breadcrumb a:visited, .uk-breadcrumb a:focus {color: #4ca7c2;}
 .color_primary, .color_primary *, .hover_color_primary:focus, .hover_color_primary:hover, ul.hover_color_primary>li>a:focus, ul.hover_color_primary>li>a:hover {color: #4ca7c2 !important;}
 a.color_primary:hover, a.color_primary:hover *, .color_primary a:hover {color: #428fa7 !important;}
-.color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #1c75a1 !important;}
+.color_secondary, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #1c75a1 !important;}
 a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {color: #18658b !important;}
 .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover, [class*=color_] .bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover, [class*=color_] a.bg_hover_white_color_primary:hover>*, [class*=color_] a.bg_hover_white_color_primary:hover>* path {color: #4ca7c2 !important; background-color: white;}
 .bg_primary, .btn_primary, .hover_bg_primary:hover, ul.hover_bg_primary>li>a:focus, ul.hover_bg_primary>li>a:hover, .uk-block-primary, .uk-pagination>li.uk-active span {color: white !important;background-color: #4ca7c2 !important;}
